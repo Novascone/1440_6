@@ -6,11 +6,17 @@
 #define BINGO_DECK_H
 
 #include <ostream>
+#include "Card.hpp"
 
 // TODO: Extend this definition as you see fit
 
 class Deck {
-
+private:
+    Card** deck;
+    int cSize; 
+    int cCount;
+    int numMax;
+    int cardIndex;
 public:
     Deck(int cardSize, int cardCount, int numberMax);
     ~Deck();
@@ -19,4 +25,4 @@ public:
     void print(std::ostream& out, int cardIndex) const;
 };
 
-#endif //BINGO_DECK_H
+#endif //

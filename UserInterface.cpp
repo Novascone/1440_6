@@ -10,6 +10,7 @@
 
 #include "Deck.hpp"
 #include "Menu.hpp"
+#include "Card.hpp"
 
 void UserInterface::run()
 {
